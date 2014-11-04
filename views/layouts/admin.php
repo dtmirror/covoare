@@ -36,10 +36,9 @@ AppAsset::register($this);
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
                     ['label' => 'Home', 'url' => ['/site/index']],
-                    ['label' => 'Despre spalare', 'url' => ['/site/about']],
-                    ['label' => 'Oferte speciale', 'url' => ['/site/oferte']],
-                    ['label' => 'Clientii nostri', 'url' => ['/site/clienti']],
-                    ['label' => 'Contact', 'url' => ['/site/contact']],
+                    ['label' => 'Despre spalare', 'url' => ['/admin/about']],
+                    ['label' => 'Oferte speciale', 'url' => ['/admin/oferte']],
+                    ['label' => 'Clientii nostri', 'url' => ['/admin/clienti']],
                     Yii::$app->user->isGuest ?
                         ['label' => 'Login', 'url' => ['/admin/login']] :
                         ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',

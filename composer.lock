@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "865ce4d9e6c2c445e707b268f070dd3f",
+    "hash": "70be025ed5ec21e9d924636a7265de60",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -310,6 +310,42 @@
                 "html"
             ],
             "time": "2013-11-30 08:25:19"
+        },
+        {
+            "name": "letyii/yii2-tinymce",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/letyii/yii2-tinymce.git",
+                "reference": "75a7a500ae2e7e3787f5621bd1aeed7d23540890"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/letyii/yii2-tinymce/zipball/75a7a500ae2e7e3787f5621bd1aeed7d23540890",
+                "reference": "75a7a500ae2e7e3787f5621bd1aeed7d23540890",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "yiisoft/yii2": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "letyii\\tinymce\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "TinyMce for yii2 textarea",
+            "homepage": "https://github.com/letyii/yii2-tinymce",
+            "keywords": [
+                "tinymce",
+                "yii2"
+            ],
+            "time": "2014-05-18 14:45:10"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -896,7 +932,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "letyii/yii2-tinymce": 20
+    },
     "prefer-stable": false,
     "platform": {
         "php": ">=5.4.0"
