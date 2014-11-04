@@ -2,16 +2,15 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-$this->title = 'About';
+$this->title = 'Clientii nostri';
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>
-<div class="site-about">
+<div class="site-clienti">
     <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        <?= \Yii::t('app', 'about') ?>
-    </p>
-
-    <code><?= __FILE__ ?></code>
+    <?php 
+    foreach ($testimoniale as $testimonial) {
+        print_r($testimonial);
+    }
+    ?>
 </div>

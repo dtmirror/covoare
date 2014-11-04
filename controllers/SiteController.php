@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Testimonial;
 
 class SiteController extends Controller
 {
@@ -92,5 +93,13 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
+    }
+
+    public function actionClienti()
+    {
+        $testimoniale = Testimonial::find()->all();
+        return $this->render('clienti', [
+            'testimoniale' => $testimoniale
+        ]);
     }
 }
