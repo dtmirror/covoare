@@ -1,1 +1,25 @@
+root@Kaa:/etc/apache2/sites-available# cat covoare.lh.conf
+# Set document root to be "basic/web"
+DocumentRoot "/var/www/covoare/web"
+
+<VirtualHost *:80>
+	ServerName covoare.lh
+        ServerAlias  www.covoare.lh
+        DocumentRoot /var/www/covoare/web
+	ErrorLog /var/log/apache2/error-covoare.log
+
+	<Directory "/var/www/covoare/web">
+	    # use mod_rewrite for pretty URL support
+	    RewriteEngine on
+	    # If a directory or a file exists, use the request directly
+	    RewriteCond %{REQUEST_FILENAME} !-f
+	    RewriteCond %{REQUEST_FILENAME} !-d
+	    # Otherwise forward the request to index.php
+	    RewriteRule . index.php
+	</Directory>
+
+</VirtualHost>
+
+-----
+
 php composer.phar require "letyii/yii2-tinymce" "dev-master"
