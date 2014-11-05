@@ -34,10 +34,8 @@ $model->oferta_status = $oferta->oferta_status;
                     'accept' => 'image/*',
                 ],
                 'pluginOptions' => [
-                    'showUpload' => true
-                ],
-                'pluginOptions' => [
-                    'showUpload' => true,
+                    'showUpload' => false,
+                    'showRemove' => false,
                     'initialPreview'=>[
                         Html::img("/images/oferte/$oferta->oferta_poza", ['class'=>'file-preview-image', 'alt'=>'', 'title'=>'']),
                     ],

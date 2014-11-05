@@ -30,7 +30,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     'accept' => 'image/*',
                 ],
                 'pluginOptions' => [
-                    'showUpload' => true
+                    'showUpload' => false,
+                    'showRemove' => false,
                 ],
             ])->label("Poza oferta");
             ?>

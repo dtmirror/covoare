@@ -9,6 +9,7 @@ CREATE TABLE `galerie_poze` (
     `poza_title` varchar(200) DEFAULT NULL,
     `poza_text` text NOT NULL,
     `poza_data` INT NOT NULL,
+    `poza_name` varchar(200) DEFAULT NULL,
     PRIMARY KEY (`poza_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
