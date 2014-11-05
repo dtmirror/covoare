@@ -37,8 +37,8 @@ AppAsset::register($this);
                 'items' => [
                     ['label' => 'Home', 'url' => ['/site/index']],
                     ['label' => 'Despre spalare', 'url' => ['/admin/about']],
-                    ['label' => 'Oferte speciale', 'url' => ['/admin/oferte']],
-                    ['label' => 'Clientii nostri', 'url' => ['/admin/clienti']],
+                    ['label' => 'Oferte speciale', 'url' => ['/oferta']],
+                    ['label' => 'Clientii nostri', 'url' => ['/testimonial']],
                     Yii::$app->user->isGuest ?
                         ['label' => 'Login', 'url' => ['/admin/login']] :
                         ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
