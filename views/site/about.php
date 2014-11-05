@@ -1,4 +1,9 @@
 <?php
+
+/**
+ * @copyright (c) 2014, Armand Niculescu <armand.niculescu@gmail.com>
+ */
+
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */

@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @copyright (c) 2014, Armand Niculescu <armand.niculescu@gmail.com>
+ */
+
 namespace app\models;
 
 class User extends \yii\base\Object implements \yii\web\IdentityInterface
