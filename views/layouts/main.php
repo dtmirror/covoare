@@ -25,7 +25,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<body class="covoare_body">
 
 <?php $this->beginBody() ?>
     <div class="wrap">
@@ -66,13 +66,13 @@ AppAsset::register($this);
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container container_main">
             <?= $content ?>
         </div>
     </div>
 
     <footer class="footer">
-        <div class="container">
+        <div class="container container_footer">
             <p class="pull-left">&copy; Context media SRL <?= date('Y') ?></p>
         </div>
     </footer>
