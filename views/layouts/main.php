@@ -54,9 +54,18 @@ AppAsset::register($this);
             NavBar::end();
         ?>
         <div class="row">
-            <div class="col-lg-12 header"></div>
+            <div class="col-lg-12 header">
+                <div class="header_text">
+                    <div class="continut">
+                        <h3>Comenzi telefonice:</h3>
+                        <h3 class="telefon">0344.802.804</h3>
+                        <h3 class="telefon">0733.802.804</h3>
+                        <h4 class="orar">Luni-Vineri: 9-19; Sambata: 10-14</h4>
+                        <h4>Ploiesti, Str Targovistei, nr 2</h4>
+                    </div>
+                </div>
+            </div>
         </div>
-
         <div class="container">
             <?= $content ?>
         </div>
@@ -64,7 +73,7 @@ AppAsset::register($this);
 
     <footer class="footer">
         <div class="container">
-            <p class="pull-left">&copy; www.covoare-curcubeu.ro <?= date('Y') ?></p>
+            <p class="pull-left">&copy; Context media SRL <?= date('Y') ?></p>
         </div>
     </footer>
 

@@ -72,7 +72,7 @@ class TestimonialController extends Controller
         if ($model->load(Yii::$app->request->post())) {
             if ($post = $model->add()) {
                 Yii::$app->getSession()->setFlash('success', \Yii::t('app','Salvare cu success!'));
-                return $this->redirect('/admin/clienti');
+                return $this->redirect('/testimonial');
             }
         }
         return $this->render('add_testimonial', [

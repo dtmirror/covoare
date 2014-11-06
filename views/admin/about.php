@@ -8,7 +8,6 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use app\models\Despre;
 use app\models\Imagine;
-use letyii\tinymce\Tinymce;
 use kartik\widgets\FileInput;
 
 /* @var $this yii\web\View */
@@ -29,20 +28,7 @@ if ($despre) {
     ]); ?>
     <div class="row">
         <div class="col-lg-12">
-            <?= $form->field($model, 'despre_text')->widget(Tinymce::className(), [
-               'options' => [
-                    'id' => 'despre_text',
-                    'rows' => 10,
-                ],
-                'configs' => [ // Read more: http://www.tinymce.com/wiki.php/Configuration
-                    'plugins' =>
-                        'advlist autolink link image lists charmap print preview
-                        searchreplace visualblocks code fullscreen
-                        insertdatetime media table contextmenu paste',
-                    'toolbar' => 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image'
-                ],
-            ])->label(\Yii::t('app', 'Despre text'));
-            ?>
+            <?= $form->field($model, 'despre_text')->textarea(['rows' => '10'])->label(\Yii::t('app', 'Despre text')) ?>
             <div class="form-group">
                 <?= Html::a(\Yii::t('app', 'Anuleaza'),['admin/about'],['class' => 'btn btn-primary', 'name' => 'cancel-despre-button']) ?>
                 <?= Html::submitButton(\Yii::t('app', 'Salveaza'), ['class' => 'btn btn-primary align-right', 'name' => 'despre-button']) ?>

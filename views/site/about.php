@@ -12,12 +12,14 @@ $this->params['breadcrumbs'][] = $this->title;
 
 ?>
 <div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
     <div class="row">
-        <div class="col-lg-4">
-            <?= $despre_text->despre_text ?>
+        <div class="col-lg-12 servicii">
+            <?= Html::decode(nl2br($despre_text->despre_text)) ?>
         </div>
-        <div class="col-lg-8">
+    </div>
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
             <div id="galerie_content">
                 <ul id="galerie_ul">
                     <?php foreach ($galerie_poze as $poza) { ?>
