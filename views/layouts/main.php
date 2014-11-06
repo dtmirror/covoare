@@ -45,11 +45,10 @@ AppAsset::register($this);
                     ['label' => 'Oferte speciale', 'url' => ['/site/oferte']],
                     ['label' => 'Clientii nostri', 'url' => ['/site/clienti']],
                     ['label' => 'Contact', 'url' => ['/site/contact']],
-                    Yii::$app->user->isGuest ?
-                        ['label' => 'Login', 'url' => ['/admin/login']] :
-                        ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                            'url' => ['/site/logout'],
-                            'linkOptions' => ['data-method' => 'post']],
+                    !Yii::$app->user->isGuest ?
+                        ['label' => 'Admin',
+                            'url' => ['/admin'],
+                            'linkOptions' => ['data-method' => 'post']] : '',
                 ],
             ]);
             NavBar::end();
