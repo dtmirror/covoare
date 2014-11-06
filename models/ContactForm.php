@@ -17,6 +17,7 @@ class ContactForm extends Model
     public $name;
     public $email;
     public $subject;
+    public $phone;
     public $body;
     public $verifyCode;
 
@@ -27,11 +28,13 @@ class ContactForm extends Model
     {
         return [
             // name, email, subject and body are required
-            [['name', 'email', 'subject', 'body'], 'required'],
+            [['name', 'phone', 'subject', 'body'], 'required'],
             // email has to be a valid email address
             ['email', 'email'],
             // verifyCode needs to be entered correctly
             ['verifyCode', 'captcha'],
+            // safe
+            ['email', 'safe'],
         ];
     }
 
@@ -41,6 +44,8 @@ class ContactForm extends Model
     public function attributeLabels()
     {
         return [
+            'name' => 'Nume',
+            'phone' => 'Telefon',
             'verifyCode' => 'Verification Code',
         ];
     }

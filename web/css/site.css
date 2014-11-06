@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    /*background: #e7e7e7;*/
 }
 
 .wrap {
@@ -106,8 +107,60 @@ a.desc:after {
 }
 
 .admin-bg {background: #3071a9; border-bottom: 1px solid #285e8e;}
+.frontend-bg {
+    background: #3071a9;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #285e8e;
+    -webkit-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
 .navbar-inverse .navbar-nav > li > a  {color: #fff;}
 .navbar-inverse .navbar-nav > li > a:hover  {background: #285e8e; color: #fff;}
 .navbar-inverse .navbar-nav > .active > a {background: #285e8e;}
 .navbar-inverse .navbar-nav > .active > a:hover {background: #285e8e;}
 .navbar-inverse .navbar-brand {color: #fff;}
+
+.header {min-height: 220px; background: green;}
+.no-margins {margin: 0 !important;}
+.no-top-padding {padding-top: 0 !important;}
+.align-right {float: right;}
+.footer {color: #999;}
+
+.testimonial span {color: #999; font-size: 0.7em;}
+
+blockquote {
+    background: #f9f9f9;
+    border: 0;
+    margin: 0.5em 1em 0.5em 2em;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    color: #666;
+    font-size: 1em;
+    text-align: justify;
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote:after {
+    margin: 1.5em 10px;
+    color: #ccc;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}

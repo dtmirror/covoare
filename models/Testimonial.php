@@ -15,6 +15,8 @@ use yii\db\ActiveRecord;
  */
 class Testimonial extends ActiveRecord {
 
+    CONST STATUS_ACTIVE = 1;
+
     public static function tableName()
     {
         return 'testimonial';
