@@ -75,7 +75,7 @@ class TestimonialController extends Controller
                 return $this->redirect('/admin/clienti');
             }
         }
-        return $this->render('clients', [
+        return $this->render('add_testimonial', [
             'model' => $model
         ]);
     }

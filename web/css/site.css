@@ -93,3 +93,21 @@ a.desc:after {
 .galerie_poze img {
     width: 100%;
 }
+
+.sterge {
+    display: block;
+    background: #ccc;
+    padding: 3px 3px 1px 6px;
+}
+
+.sterge:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.admin-bg {background: #3071a9; border-bottom: 1px solid #285e8e;}
+.navbar-inverse .navbar-nav > li > a  {color: #fff;}
+.navbar-inverse .navbar-nav > li > a:hover  {background: #285e8e; color: #fff;}
+.navbar-inverse .navbar-nav > .active > a {background: #285e8e;}
+.navbar-inverse .navbar-nav > .active > a:hover {background: #285e8e;}
+.navbar-inverse .navbar-brand {color: #fff;}

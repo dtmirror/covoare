@@ -17,6 +17,6 @@ class Imagine extends ActiveRecord {
     }
 
     public function getImage() {
-        return Html::img('/images/galerie_poze/' . $this->poza_name);
+        return Html::img('/images/galerie_poze/' . $this->poza_name, ['title' => $this->poza_title]);
     }
 }

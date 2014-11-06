@@ -89,7 +89,8 @@ if ($despre) {
                     foreach ($poze as $poza) {
                 ?>
                     <div class="col-lg-4 galerie_poze">
-                        <?= Html::a($poza->getImage(), ['/admin/delete-img', 'id' => $poza->poza_id]) ?>
+                        <?= Html::a('<span class="glyphicon glyphicon-remove"></span> Sterge', ['/admin/delete-img', 'id' => $poza->poza_id], ['class' => 'sterge']) ?>
+                        <?= $poza->getImage(); ?>
                     </div>
                     <?php } ?>
                 <?php } ?>
