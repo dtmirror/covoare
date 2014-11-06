@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-lg-12 testimonial">
             <h3><?= $testimonial->testimonial_client ?>:</h3>
             <blockquote>
-                <?= $testimonial->testimonial_text ?>
+                <?= Html::decode(nl2br($testimonial->testimonial_text)) ?>
             </blockquote>
         </div>
     <?php } ?>

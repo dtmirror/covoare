@@ -13,6 +13,8 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Despre;
+use app\models\Imagine;
 use app\models\Testimonial;
 
 class SiteController extends Controller
@@ -97,7 +99,12 @@ class SiteController extends Controller
 
     public function actionAbout()
     {
-        return $this->render('about');
+        $despre_text = Despre::find()->one();
+        $galerie_poze = Imagine::find()->all();
+        return $this->render('about', [
+            'despre_text' => $despre_text,
+            'galerie_poze' => $galerie_poze
+        ]);
     }
 
     public function actionClienti()

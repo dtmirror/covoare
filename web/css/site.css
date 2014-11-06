@@ -91,6 +91,8 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 
+.galerie_poze {margin-bottom: 30px;}
+
 .galerie_poze img {
     width: 100%;
 }
@@ -163,4 +165,42 @@ blockquote:after {
 
 blockquote p {
   display: inline;
+}
+
+#galerie_content {
+    float: left;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    background: #F0F0F0;
+}
+
+#galerie_ul {
+    position: relative;
+    //left: -210px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 9999px;
+    padding-bottom: 10px;
+}
+
+#galerie_ul li {
+    float: left;
+    width: 200px;
+    padding: 0px;
+    height: 110px;
+    background: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#galerie_ul li img {
+    margin-bottom: -4px;
+    width: 100%;
+    cursor: pointer;
+    cursor: hand;
+    border: 0px;
 }
