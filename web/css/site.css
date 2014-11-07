@@ -233,3 +233,28 @@ blockquote p {
 
 .servicii {text-align: justify;}
 .servicii h2 {margin: 10px 0; padding: 0;}
+
+.calculator {
+    background: #cfc;
+    padding: 10px;
+}
+
+.calculator input {width: 100%; padding: 2px;}
+.calculator .row {margin: 0 -10px;}
+.calculator .row {padding: 5px;}
+.calculator #rezultat,
+.calculator #transport {font-weight: bold;}
+.calculator .odd {background: #bfb;}
+.calculator .even {background: #cfc;}
+
+.btn-calculator {
+    color: #fff;
+    background-color: #62882f;
+    border-color: #008000;
+}
+
+.btn-calculator:hover {
+    color: #000;
+    background-color: #94c73d;
+    border-color: #80af41;
+}

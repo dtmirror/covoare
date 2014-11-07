@@ -21,7 +21,8 @@ class AppAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
-        'js/gallery_slider.js'
+        'js/gallery_slider.js',
+        'js/calculator.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

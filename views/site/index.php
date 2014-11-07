@@ -4,6 +4,8 @@
  * @copyright (c) 2014, Armand Niculescu <armand.niculescu@gmail.com>
  */
 
+use yii\helpers\Html;
+
 /* @var $this yii\web\View */
 $this->title = 'Curcubeu | Spalatoria de covoare Ploiesti';
 ?>
@@ -30,6 +32,48 @@ $this->title = 'Curcubeu | Spalatoria de covoare Ploiesti';
                 <li>Spalam si uscam covoarele cu utilaje profesionale, in conditii controlate</li>
                 <li>Va returnam covoarele curate in 48 de ore</li>
             </ul>
+            <h1 style="margin-top: 40px;">Calculator pret (9 RON / mp)</h1>
+            <div class="calculator">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-4">Lungime (cm)</div>
+                    <div class="col-lg-4">Latime (cm)</div>
+                    <div class="col-lg-1"></div>
+                </div>
+                <div class="row odd">
+                    <div class="col-lg-3">Covor 1</div>
+                    <div class="col-lg-4"><input type="text" value="100" id="covor_1_lung" onfocus="this.value='';"></div>
+                    <div class="col-lg-4"><input type="text" value="100" id="covor_1_lat" onfocus="this.value='';"></div>
+                    <div class="col-lg-1"></div>
+                </div>
+                <div class="row even">
+                    <div class="col-lg-3">Covor 2</div>
+                    <div class="col-lg-4"><input type="text" value="0" id="covor_2_lung" onfocus="this.value='';"></div>
+                    <div class="col-lg-4"><input type="text" value="0" id="covor_2_lat" onfocus="this.value='';"></div>
+                    <div class="col-lg-1"></div>
+                </div>
+                <div class="row odd">
+                    <div class="col-lg-3">Covor 3</div>
+                    <div class="col-lg-4"><input type="text" value="0" id="covor_3_lung" onfocus="this.value='';"></div>
+                    <div class="col-lg-4"><input type="text" value="0" id="covor_3_lat" onfocus="this.value='';"></div>
+                    <div class="col-lg-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3"><b>Transport</b></div>
+                    <div class="col-lg-8" id="transport"></div>
+                    <div class="col-lg-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3"><b>Pret total:</b></div>
+                    <div class="col-lg-8" id="rezultat"></div>
+                    <div class="col-lg-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <?= Html::submitButton(\    Yii::t('app', 'Calculeaza'), ['class' => 'btn btn-calculator align-right', 'name' => 'calculeaza-button', 'onclick' => 'calculeaza();']) ?>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
