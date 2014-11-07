@@ -47,7 +47,9 @@ class OfertaForm extends Model
             $form->oferta_text = $this->oferta_text;
             $form->oferta_status = $this->oferta_status;
             $form->oferta_data = time();
-            $form->oferta_poza = $form->oferta_data . "_". Util::formatFileName($this->oferta_poza->name);
+            if ($this->oferta_poza->name) {
+                $form->oferta_poza = $form->oferta_data . "_". Util::formatFileName($this->oferta_poza->name);
+            }
             $form->save();
             return $form;
         }
