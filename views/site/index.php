@@ -81,6 +81,7 @@ $this->title = 'Curcubeu | Spalatoria de covoare Ploiesti';
             </div>
         </div>
     </div>
+    <?php if(count($parteneri)) { ?>
     <div class="row">
         <div class="col-lg-4"></div>
         <div class="col-lg-6">
@@ -93,4 +94,5 @@ $this->title = 'Curcubeu | Spalatoria de covoare Ploiesti';
             </div>
         </div>
     </div>
+    <?php } ?>
 </div>
