@@ -37,26 +37,26 @@ $this->title = 'Curcubeu | Spalatoria de covoare Ploiesti';
                 <div class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-4">Lungime (cm)</div>
-                    <div class="col-lg-4">Latime (cm)</div>
                     <div class="col-lg-1"></div>
+                    <div class="col-lg-4">Latime (cm)</div>
                 </div>
                 <div class="row odd">
                     <div class="col-lg-3">Covor 1</div>
                     <div class="col-lg-4"><input type="text" value="100" id="covor_1_lung" onfocus="this.value='';"></div>
+                    <div class="col-lg-1 multiply"><span class="glyphicon glyphicon-remove"></span></div>
                     <div class="col-lg-4"><input type="text" value="100" id="covor_1_lat" onfocus="this.value='';"></div>
-                    <div class="col-lg-1"></div>
                 </div>
                 <div class="row even">
                     <div class="col-lg-3">Covor 2</div>
                     <div class="col-lg-4"><input type="text" value="0" id="covor_2_lung" onfocus="this.value='';"></div>
+                    <div class="col-lg-1 multiply"><span class="glyphicon glyphicon-remove"></span></div>
                     <div class="col-lg-4"><input type="text" value="0" id="covor_2_lat" onfocus="this.value='';"></div>
-                    <div class="col-lg-1"></div>
                 </div>
                 <div class="row odd">
                     <div class="col-lg-3">Covor 3</div>
                     <div class="col-lg-4"><input type="text" value="0" id="covor_3_lung" onfocus="this.value='';"></div>
+                    <div class="col-lg-1 multiply"><span class="glyphicon glyphicon-remove"></span></div>
                     <div class="col-lg-4"><input type="text" value="0" id="covor_3_lat" onfocus="this.value='';"></div>
-                    <div class="col-lg-1"></div>
                 </div>
                 <div class="row">
                     <div class="col-lg-3"><b>Transport</b></div>
@@ -73,6 +73,11 @@ $this->title = 'Curcubeu | Spalatoria de covoare Ploiesti';
                         <?= Html::submitButton(\    Yii::t('app', 'Calculeaza'), ['class' => 'btn btn-calculator align-right', 'name' => 'calculeaza-button', 'onclick' => 'calculeaza();']) ?>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <?= Html::a('Vezi termeni si conditii', ['/site/about']) ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -82,7 +87,7 @@ $this->title = 'Curcubeu | Spalatoria de covoare Ploiesti';
             <div id="parteneri_content">
                 <ul id="parteneri_ul">
                     <?php foreach ($parteneri as $partener) { ?>
-                    <li><?= Html::img('/images/parteneri/' . $partener->partener_poza) ?></li>
+                    <li><?= Html::a(Html::img('/images/parteneri/' . $partener->partener_poza), 'http://' . $partener->partener_link, ['target' => '_blank', 'title' => $partener->partener_name]) ?></li>
                     <?php } ?>
                 </ul>
             </div>

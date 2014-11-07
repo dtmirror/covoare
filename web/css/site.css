@@ -145,6 +145,8 @@ a.desc:after {
     margin: 0 auto;
 }
 
+.multiply {padding-top: 6px; color: #666;}
+
 .header_text h3.telefon {margin: 4px 0;}
 
 .header_text h4.orar {margin-top: 36px;}
@@ -263,3 +265,6 @@ blockquote p {
     background-color: #94c73d;
     border-color: #80af41;
 }
+
+.oferte col {}
+.oferte img {width: 100%;}

@@ -10,6 +10,8 @@ use yii\db\ActiveRecord;
 
 class Oferta extends ActiveRecord {
 
+    const STATUS_ACTIVE = 1;
+
     public static function tableName()
     {
         return 'oferte';

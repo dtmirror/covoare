@@ -61,8 +61,8 @@ $config = [
             'transport' => [
                 'class' => 'Swift_SmtpTransport',
                 'host' => 'smtp.gmail.com',
-                'username' => '',
-                'password' => '',
+                'username' => 'covoare.curcubeu@gmail.com',
+                'password' => 'mihaela123#',
                 'port' => '587',
                 'encryption' => 'tls',
             ],

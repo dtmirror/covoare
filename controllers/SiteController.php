@@ -15,6 +15,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\Despre;
 use app\models\Imagine;
+use app\models\Oferta;
 use app\models\Partener;
 use app\models\Testimonial;
 
@@ -119,6 +120,16 @@ class SiteController extends Controller
 
         return $this->render('clienti', [
             'testimoniale' => $testimoniale
+        ]);
+    }
+
+    public function actionOferte()
+    {
+        $oferte = Oferta::findAll([
+            'oferta_status' => Oferta::STATUS_ACTIVE
+        ]);
+        return $this->render('oferte', [
+            'oferte' => $oferte,
         ]);
     }
 }
