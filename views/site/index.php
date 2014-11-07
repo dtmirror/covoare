@@ -33,7 +33,7 @@ $this->title = 'Curcubeu | Spalatoria de covoare Ploiesti';
                 <li>Va returnam covoarele curate in 48 de ore</li>
             </ul>
             <h1 style="margin-top: 40px;">Calculator pret (9 RON / mp)</h1>
-            <div class="calculator">
+            <div class="calculator" id="calculator">
                 <div class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-4">Lungime (cm)</div>
@@ -73,6 +73,18 @@ $this->title = 'Curcubeu | Spalatoria de covoare Ploiesti';
                         <?= Html::submitButton(\    Yii::t('app', 'Calculeaza'), ['class' => 'btn btn-calculator align-right', 'name' => 'calculeaza-button', 'onclick' => 'calculeaza();']) ?>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-6">
+            <div id="parteneri_content">
+                <ul id="parteneri_ul">
+                    <?php foreach ($parteneri as $partener) { ?>
+                    <li><?= Html::img('/images/parteneri/' . $partener->partener_poza) ?></li>
+                    <?php } ?>
+                </ul>
             </div>
         </div>
     </div>

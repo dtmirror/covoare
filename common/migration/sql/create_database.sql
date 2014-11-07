@@ -23,6 +23,15 @@ CREATE TABLE `oferte` (
     PRIMARY KEY (`oferta_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE `parteneri` (
+    `partener_id` int(11) NOT NULL AUTO_INCREMENT,
+    `partener_name` varchar(200) DEFAULT NULL,
+    `partener_link` varchar(200) DEFAULT NULL,
+    `partener_poza` varchar(200) DEFAULT NULL,
+    `partener_data` INT NOT NULL,
+    PRIMARY KEY (`partener_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 CREATE TABLE `testimonial` (
     `testimonial_id` int(11) NOT NULL AUTO_INCREMENT,
     `testimonial_client` varchar(45) DEFAULT NULL,

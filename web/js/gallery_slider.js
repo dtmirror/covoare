@@ -1,7 +1,7 @@
 $(document).ready(function() {
     setInterval(function(){
         //move the last list item before the first item. The purpose of this is if the user clicks previous he will be able to see the last item.  
-        $('#galerie_ul li:first').before($('#galerie_ul li:last'));
+        //$('#galerie_ul li:first').before($('#galerie_ul li:last'));
 
         //get the width of the items ( i like making the jquery part dynamic, so if you change the width in the css you won't have o change it here too ) '
         var item_width = $('#galerie_ul li').outerWidth() + 10;

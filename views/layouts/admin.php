@@ -41,6 +41,7 @@ AppAsset::register($this);
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
                     ['label' => 'Despre spalare', 'url' => ['/admin/about']],
+                    ['label' => 'Parteneri', 'url' => ['/partener']],
                     ['label' => 'Oferte speciale', 'url' => ['/oferta']],
                     ['label' => 'Clientii nostri', 'url' => ['/testimonial']],
                     Yii::$app->user->isGuest ?

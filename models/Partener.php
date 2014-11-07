@@ -8,10 +8,10 @@ namespace app\models;
 
 use yii\db\ActiveRecord;
 
-class Oferta extends ActiveRecord {
+class Partener extends ActiveRecord {
 
     public static function tableName()
     {
-        return 'oferte';
+        return 'parteneri';
     }
 }

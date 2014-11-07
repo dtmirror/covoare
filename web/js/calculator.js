@@ -3,7 +3,9 @@ var pret_minim = 36; // pretul minim pt transport gratuit
 var pret_transport = 10; // pretul pe transport
 
 $(document).ready(function() {
-    calculeaza();
+    if ($('.calculator').length) {
+        calculeaza();
+    }
 });
 
 function getInputValue(elmentId) {

@@ -15,6 +15,7 @@ use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\Despre;
 use app\models\Imagine;
+use app\models\Partener;
 use app\models\Testimonial;
 
 class SiteController extends Controller
@@ -57,7 +58,10 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $parteneri = Partener::find()->all();
+        return $this->render('index', [
+            'parteneri' => $parteneri
+        ]);
     }
 
     public function actionLogin()
