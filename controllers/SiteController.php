@@ -59,6 +59,7 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
+        $this->layout = 'homepage';
         $parteneri = Partener::find()->all();
         return $this->render('index', [
             'parteneri' => $parteneri
@@ -102,11 +103,21 @@ class SiteController extends Controller
         }
     }
 
-    public function actionAbout()
+    public function actionDespreNoi()
     {
         $despre_text = Despre::find()->one();
         $galerie_poze = Imagine::find()->all();
-        return $this->render('about', [
+        return $this->render('despre_noi', [
+            'despre_text' => $despre_text,
+            'galerie_poze' => $galerie_poze
+        ]);
+    }
+
+    public function actionDespreSpalare()
+    {
+        $despre_text = Despre::find()->one();
+        $galerie_poze = Imagine::find()->all();
+        return $this->render('despre_spalare', [
             'despre_text' => $despre_text,
             'galerie_poze' => $galerie_poze
         ]);

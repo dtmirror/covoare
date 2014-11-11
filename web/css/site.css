@@ -40,6 +40,13 @@ body {
     font-style: italic;
 }
 
+#main_pic {
+    margin: 0 auto;
+    width: 1170px;
+    height: 798px;
+    background: url('/images/layout/bg.prices.jpg') no-repeat 0 0;
+}
+
 /* add sorting icons to gridview sort links */
 a.asc:after, a.desc:after {
     position: relative;
@@ -162,6 +169,9 @@ a.desc:after {
 .homepage p {margin: 10px 0 20px 0;}
 .homepage h4 {margin: 20px 0 10px 0;}
 .homepage li {margin: 10px 0;}
+.homepage .contact h3 {margin-top: 60px;}
+.homepage .contact ul {margin: 0 0 30px 0;}
+.homepage .contact li {list-style-type: none; font-size: 1.4em; color: #3071a9; margin: 4px 0;}
 
 blockquote {
     background: #f9f9f9;
@@ -253,6 +263,7 @@ blockquote p {
 .calculator #transport {font-weight: bold;}
 .calculator .odd {background: #bfb;}
 .calculator .even {background: #cfc;}
+.calculator_homepage {}
 
 .btn-calculator {
     color: #fff;

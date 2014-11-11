@@ -41,7 +41,8 @@ AppAsset::register($this);
                 'options' => ['class' => 'navbar-nav navbar-right'],
                 'items' => [
                     ['label' => 'Acasa', 'url' => ['/site/index']],
-                    ['label' => 'Despre spalare', 'url' => ['/site/about']],
+                    ['label' => 'Despre noi', 'url' => ['/site/despre-noi']],
+                    ['label' => 'Despre spalare', 'url' => ['/site/despre-spalare']],
                     ['label' => 'Oferte speciale', 'url' => ['/site/oferte']],
                     ['label' => 'Clientii nostri', 'url' => ['/site/clienti']],
                     ['label' => 'Contact', 'url' => ['/site/contact']],
