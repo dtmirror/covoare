@@ -32,7 +32,7 @@ AppAsset::register($this);
         <div id="main_pic">
             <div class="row">
                 <div class="col-lg-7">
-                    <img style="position: relative; top: 0; opacity: 0; border: solid #000 1px; left: 0;" id="Image-Maps_2201303140603336" src="../images/layout/bg.prices.png" usemap="#Image-Maps_2201303140603336" border="0" width="1080" alt="">
+                    <img style="position: relative; top: 0; opacity: 0; border: solid #000 1px; left: 0;" id="Image-Maps_2201303140603336" src="../images/layout/bg.prices.png" usemap="#Image-Maps_2201303140603336" border="0" width="1080" height="740" alt="">
                     <map id="_Image-Maps_2201303140603336" name="Image-Maps_2201303140603336">
                         <map id="imgmap2013314122214" name="imgmap2013314122214">
                             <area shape="poly" alt="" title="" coords="144,396,141,429,352,446,352,446" href="site/index" id="home" target="">
