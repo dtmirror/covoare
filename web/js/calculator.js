@@ -3,7 +3,7 @@ var pret_minim = 36; // pretul minim pt transport gratuit
 var pret_transport = 10; // pretul pe transport
 
 $(document).ready(function() {
-    if ($('.calculator').length) {
+    if ($('#calculator').length) {
         calculeaza();
     }
 });
@@ -30,7 +30,7 @@ function calculeaza() {
             document.getElementById('transport').innerHTML = pret_transport + ' RON' + ' (GRATUIT peste 4mp)';
         }
     } else {
-        document.getElementById('transport').innerHTML = 'GRATUIT!';
+        document.getElementById('transport').innerHTML = '<span style="color: orange; font-weight: bold;">GRATUIT!</span>';
     }
     document.getElementById('rezultat').innerHTML = totalPrice + ' RON';
 }

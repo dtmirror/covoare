@@ -32,8 +32,8 @@ $this->title = 'Curcubeu | Spalatoria de covoare Ploiesti';
                 <li>Spalam si uscam covoarele cu utilaje profesionale, in conditii controlate</li>
                 <li>Va returnam covoarele curate in 48 de ore</li>
             </ul>
-            <h1 style="margin-top: 40px;">Calculator pret (9 RON / mp)</h1>
-            <div class="calculator" id="calculator">
+            <div class="wrapCalculator effect7" id="calculator">
+                <h1>Calculator</h1>
                 <div class="row">
                     <div class="col-lg-3"></div>
                     <div class="col-lg-4">Lungime (cm)</div>
@@ -42,9 +42,9 @@ $this->title = 'Curcubeu | Spalatoria de covoare Ploiesti';
                 </div>
                 <div class="row odd">
                     <div class="col-lg-3">Covor 1</div>
-                    <div class="col-lg-4"><input type="text" value="100" id="covor_1_lung" onfocus="this.value='';"></div>
+                    <div class="col-lg-4"><input type="text" value="200" id="covor_1_lung" onfocus="this.value='';"></div>
                     <div class="col-lg-1 multiply"><span class="glyphicon glyphicon-remove"></span></div>
-                    <div class="col-lg-4"><input type="text" value="100" id="covor_1_lat" onfocus="this.value='';"></div>
+                    <div class="col-lg-4"><input type="text" value="300" id="covor_1_lat" onfocus="this.value='';"></div>
                 </div>
                 <div class="row even">
                     <div class="col-lg-3">Covor 2</div>
@@ -73,9 +73,10 @@ $this->title = 'Curcubeu | Spalatoria de covoare Ploiesti';
                         <?= Html::submitButton(\    Yii::t('app', 'Calculeaza'), ['class' => 'btn btn-calculator align-right', 'name' => 'calculeaza-button', 'onclick' => 'calculeaza();']) ?>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-lg-12">
-                        <?= Html::a('Vezi termeni si conditii', ['/site/about']) ?>
+                        <?= Html::a('Vezi termeni si conditii', ['/site/despre-spalare']) ?>
                     </div>
                 </div>
             </div>

@@ -251,31 +251,107 @@ blockquote p {
 .servicii {text-align: justify;}
 .servicii h2 {margin: 10px 0; padding: 0;}
 
-.calculator {
-    background: #cfc;
-    padding: 10px;
-}
-
-.calculator input {width: 100%; padding: 2px;}
-.calculator .row {margin: 0 -10px;}
-.calculator .row {padding: 5px;}
-.calculator #rezultat,
-.calculator #transport {font-weight: bold;}
-.calculator .odd {background: #bfb;}
-.calculator .even {background: #cfc;}
-.calculator_homepage {}
-
 .btn-calculator {
     color: #fff;
-    background-color: #62882f;
-    border-color: #008000;
+    background-color: #3071a9;
+    border-color: #285e8e;
 }
 
 .btn-calculator:hover {
-    color: #000;
-    background-color: #94c73d;
-    border-color: #80af41;
+    color: #fff;
+    background-color: #3071a9;
+    border-color: #285e8e;
+    -webkit-box-shadow:0 5px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 5px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 5px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
 .oferte col {}
 .oferte img {width: 100%;}
+
+/*calculator*/
+.wrapCalculator {
+    background: #fff;
+    margin: 20px auto;
+    display: block;
+    width: 100%;
+    min-height: 310px;
+    padding:20px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+/*==================================================
+ * Effect 7
+ * ===============================================*/
+.effect7
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.wrapCalculator h1 {
+    background: #3071a9;
+    background: -moz-linear-gradient(top,  #285e8e 0%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#285e8e), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top,  #285e8e 0%,#3071a9 100%);
+    background: -o-linear-gradient(top,  #285e8e 0%,#ffffff 100%);
+    background: -ms-linear-gradient(top,  #285e8e 0%,#ffffff 100%);
+    background: linear-gradient(top,  #285e8e 0%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#285e8e', endColorstr='#3071a9',GradientType=0 );
+
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    padding: 0 20px;
+    line-height: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: -35px;
+    position: relative;
+    width: 100%;
+
+    box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.3);
+
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.wrapCalculator h1:after {
+    position: absolute;
+    content: '';
+    width: 0; height: 0;
+    line-height: 0;
+    border-left: 15px solid transparent;
+    border-top: 10px solid #729c9a;
+    bottom: -10px;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.wrapCalculator h1:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    height: 39px;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    width: 100%;
+    left: 0;
+}
+
+.wrapCalculator input {
+    width: 100%;
+    padding: 2px;
+    border: 0;
+    -webkit-box-shadow:inset 0 0 20px #ccc;
+       -moz-box-shadow:inset 0 0 20px #ccc;
+            box-shadow:inset 0 0 20px #ccc;
+}
+.wrapCalculator .row {padding-top: 5px;}
+.wrapCalculator .multiply {padding-left: 5px; color: #bbb;}
