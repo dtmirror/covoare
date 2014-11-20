@@ -72,11 +72,10 @@ AppAsset::register($this);
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="container container_footer">
-            <p class="pull-left">&copy; Context media SRL <?= date('Y') ?></p>
-        </div>
-    </footer>
+    <div class="footer">
+        <?php $this->beginContent('@app/views/layouts/footer.php'); ?>
+        <?php $this->endContent(); ?>
+    </div>
 
 <?php $this->endBody() ?>
 </body>

@@ -15,14 +15,15 @@ body {
 }
 
 .wrap > .container {
-    padding: 70px 15px 20px;
+    padding: 20px 15px 20px;
 }
 
 .footer {
-    height: 60px;
-    background-color: #f5f5f5;
+    height: 90px;
+    background-color: #fff;
     border-top: 1px solid #ddd;
     padding-top: 20px;
+    color: #999;
 }
 
 .jumbotron {
@@ -129,11 +130,6 @@ a.desc:after {
          -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
 }
-.navbar-inverse .navbar-nav > li > a  {color: #fff;}
-.navbar-inverse .navbar-nav > li > a:hover  {background: #94c73d; color: #fff;}
-.navbar-inverse .navbar-nav > .active > a {background: #94c73d; color: #000;}
-.navbar-inverse .navbar-nav > .active > a:hover {background: #94c73d;}
-.navbar-inverse .navbar-brand {color: #fff;}
 
 .header {
     min-height: 220px;
@@ -147,21 +143,20 @@ a.desc:after {
 
 .header_text .continut {
     width: 1140px;
-    padding: 0 20px;
+    padding: 0;
     text-align: right;
     margin: 0 auto;
 }
 
 .multiply {padding-top: 6px; color: #666;}
 
-.header_text h3.telefon {margin: 4px 0;}
+.header_text h3.telefon {margin: 4px 0; color: #285e8e; text-shadow: 1px 1px #bbb;}
 
 .header_text h4.orar {margin-top: 36px;}
 
 .no-margins {margin: 0 !important;}
 .no-top-padding {padding-top: 0 !important;}
 .align-right {float: right;}
-.footer {color: #999;}
 .justify {text-align: justify;}
 
 .testimonial span {color: #999; font-size: 0.7em;}
@@ -355,3 +350,140 @@ blockquote p {
 }
 .wrapCalculator .row {padding-top: 5px;}
 .wrapCalculator .multiply {padding-left: 5px; color: #bbb;}
+
+ul.menu_buttons {float: right; padding: 0; margin: 0;}
+ul.menu_buttons li {
+    list-style-type: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+	border: 4px solid #cfdcec;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 50px;
+    color: #cfdcec;
+}
+
+ul.menu_buttons li:hover {
+	border: 4px solid #285e8e;
+    color: orange;
+    background: #3071a9;
+    cursor: pointer;
+}
+
+ul.menu_buttons li a {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -10px;
+    top: -10px;
+}
+
+ul.menu_buttons li i {font-size: 1.6em;}
+
+// icons
+
+@font-face {
+  font-family: 'Elusive';
+
+  src: url('/common/fonts/Elusive-Icons.eot');
+  src:  url('/common/fonts/Elusive-Icons.eot?#iefix') format('embedded-opentype'),
+        url('/common/fonts/Elusive-Icons.woff') format('woff'),
+        url('/common/fonts/Elusive-Icons.ttf') format('truetype'),
+        url('/common/fonts/Elusive-Icons.svg#Elusive-Icons') format('svg')
+}
+
+.elusive {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Elusive';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-asterisk:before {
+  content: "\2a";
+}
+
+#menubar {height: 20px; background: #285e8e;}
+#headerBottom {
+    height: 1px;
+    background: orange;
+}
+
+#pageHeader {
+    background: orange;
+}
+
+#pageHeader h1 {
+    display: inline-block;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    padding-right: 0.50em;
+    border-right: 1px solid rgba(0,0,0,.1);
+    padding-bottom: 10px;
+}
+
+#pageHeader ul li {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+#pageHeader ul {
+    margin: 14px 0;
+}
+
+.navbar-nav > li > a  {
+    color: #285e8e;
+}
+.navbar-nav > li > a:hover  {
+    background: orange;
+    font-weight: 600;
+    border-top: 0px solid #285e8e;
+}
+.navbar-nav > .active > a {
+    border-top: 2px solid #285e8e;
+    font-weight: 600;
+}
+.navbar-nav > .active > a:hover {
+    background: orange;
+    color: #285e8e;
+    border-top: 2px solid #285e8e;
+}
+.navbar-brand {color: #fff;}
+
+#pageHeader .header_bg {
+    background: url('/images/common/baloane-2.jpg') no-repeat #285e8e 0 50%;
+    background-size: 100%;
+    height: 340px;
+}
+
+.curcubeu {float: left;}
+.curcubeu img {
+    width: 390px;
+    margin-top: -64px;
+    margin-left: -30px;
+}
+
+.facebook {margin-top: 85px; width: 100px; float: right;}
+.facebook img {
+    width: 100px;
+}
+
+.header_main_text {
+    float: left;
+    width: 350px;
+    margin: 15px 0 0 67px;
+    font-size: 2.2em;
+    color: orange;
+    text-shadow: 1px 1px #000;
+    text-align: center;
+}

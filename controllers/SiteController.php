@@ -21,6 +21,8 @@ use app\models\Testimonial;
 
 class SiteController extends Controller
 {
+    public $layout = 'template_01';
+
     public function behaviors()
     {
         return [

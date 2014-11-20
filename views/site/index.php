@@ -68,7 +68,7 @@ use yii\helpers\Html;
                         <div class="col-lg-1"></div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3"><b>Pret total:</b></div>
+                        <div class="col-lg-3"><b>Total:</b></div>
                         <div class="col-lg-8" id="rezultat"></div>
                         <div class="col-lg-1"></div>
                     </div>
